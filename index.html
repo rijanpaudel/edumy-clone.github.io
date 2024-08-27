@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/css/style.css">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
 </head>
+
 <body>
   <!-- top nav with envatomarket and buy now button -->
-  <div class="envato flex items-center justify-between py-0 px-8 bg-neutral-800 h-14 w-screen">
+  <div class="envato flex fixed top-0 left-0 items-center justify-between py-0 px-8 bg-neutral-800 h-14 w-screen z-20">
     <!-- envatomarket logo -->
-    <a href="https://themeforest.net/item/edumy-lms-online-education-course-school-html-template/24648034" class="envato-logo w-32"><img src="/images/envato_market-dd390ae860330996644c1c109912d2bf63885fc075b87215ace9b5b4bdc71cc8.svg" alt=""></a>
+    <a href="https://themeforest.net/item/edumy-lms-online-education-course-school-html-template/24648034"
+      class="envato-logo w-32"><img
+        src="/images/envato_market-dd390ae860330996644c1c109912d2bf63885fc075b87215ace9b5b4bdc71cc8.svg" alt=""></a>
     <div class="buynow-button text-white py-1.5 px-4 rounded-md text-sm">
       <!-- buy now button -->
       <a href="">Buy Now</a>
@@ -24,7 +28,7 @@
   </div>
 
   <!-- top nav with search bar and main logo -->
-  <div class="search-nav relative flex items-center justify-center h-20 bg-black gap-4">
+  <div class="search-nav mt-14 flex flex-wrap items-center justify-center h-20 bg-black gap-4">
     <div class="main-logo flex items-center justify-center gap-3 uppercase text-white text-xl font-semibold">
       <!-- edumy logo -->
       <img src="./images/header-logo.png" alt="">
@@ -37,8 +41,10 @@
 
     <div class="search mr-40">
       <form action="" class="flex">
-      <input type="text" placeholder="Search for the software or skills you want to learn" class="h-12 w-[22rem] px-3 rounded-s-full text-sm">
-      <button class="bg-white rounded-e-full pr-3"><img src="./images/magnifying-glass.png" alt="" class="w-8 h-8"></button>
+        <input type="text" placeholder="Search for the software or skills you want to learn"
+          class="h-12 w-[22rem] px-3 rounded-s-full text-sm focus:border-none focus:outline-none">
+        <button class="bg-white rounded-e-full pr-3"><img src="./images/magnifying-glass.png" alt=""
+            class="w-8 h-8"></button>
       </form>
     </div>
 
@@ -48,65 +54,74 @@
     </div>
   </div>
 
-  <div class="main-nav h-20 flex items-center justify-center text-gray-500 gap-60">
+  <div class="main-nav sticky h-20 flex items-center justify-center text-gray-500 gap-60">
     <ul class="flex gap-10">
-      <li><a href="">Home &#9662;</a></li>
-      <li><a href="">Courses &#9662;</a></li>
-      <li><a href="">Events &#9662;</a></li>
-      <li><a href="">Pages &#9662;</a></li>
-      <li><a href="">Blog &#9662;</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="" class="hover:text-white">Home &#9662;</a></li>
+      <li><a href="" class="hover:text-white">Courses &#9662;</a></li>
+      <li><a href="" class="hover:text-white">Events &#9662;</a></li>
+      <li><a href="" class="hover:text-white">Pages &#9662;</a></li>
+      <li><a href="" class="hover:text-white">Blog &#9662;</a></li>
+      <li><a href="" class="hover:text-white">Contact</a></li>
     </ul>
 
     <ul class="flex gap-5 items-center">
-      <li>
-        <a href="" class="flex gap-5">
-          
-        <span>Become an instructor</span>
-      </a>
-    </li>
+      <li class="hover:text-white">
+        <a href="" class="flex gap-1">
+          <img src="/images/megaphone.png" alt="" class="w-6">
+          <span>Become an instructor</span>
+        </a>
+      </li>
 
-    <li class="text-3xl font-extralight">
-      <span>|</span>
-    </li>
+      <li class="text-3xl font-extralight">
+        <span>|</span>
+      </li>
 
-    <li>
-      <a href="" class="flex gap-5">
-        
-      <span>Login/Register</span>
-    </a>
+      <li class="hover:text-white">
+        <a href="" class="flex gap-1">
+          <img src="/images/user.png" alt="" class="w-6">
+          <span>Login/Register</span>
+        </a>
     </ul>
   </div>
 
   <div class="swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide text-white flex justify-center items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/swipe1.jpg');">
+      <div class="swiper-slide text-white flex justify-center items-center"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/swipe1.jpg');">
         <div class="slide-texts flex flex-col gap-5 items-center">
           <h1 class="uppercase text-5xl">start investing in you</h1>
           <p class="text-md">Technology is bringing a massive wave of evolution on learning things on different ways</p>
-          <a href="#" class="bg-none w-60 py-5 px-10 border-2 border-white rounded-full hover:bg-white hover:text-blue-500">Ready to get Started?</a>
+          <a href="#"
+            class="bg-none w-60 py-3 px-10 border-2 border-white rounded-full hover:bg-white hover:text-blue-500">Ready
+            to get Started?</a>
         </div>
       </div>
 
-      <div class="swiper-slide text-white flex justify-center items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/swipe2.jpg');">
+      <div class="swiper-slide text-white flex justify-center items-center"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/swipe2.jpg');">
         <div class="slide-texts flex flex-col gap-5 items-center">
           <h1 class="uppercase text-5xl">start investing in you</h1>
           <p class="text-md">Technology is bringing a massive wave of evolution on learning things on different ways</p>
-          <a href="#" class="bg-none w-60 py-5 px-10 border-2 border-white rounded-full hover:bg-white hover:text-blue-500">Ready to get Started?</a>
+          <a href="#"
+            class="bg-none w-60 py-5 px-10 border-2 border-white rounded-full hover:bg-white hover:text-blue-500">Ready
+            to get Started?</a>
         </div>
       </div>
 
-      <div class="swiper-slide text-white flex justify-center items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/swipe3.jpg');">
+      <div class="swiper-slide text-white flex justify-center items-center"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/swipe3.jpg');">
         <div class="slide-texts flex flex-col gap-5 items-center">
           <h1 class="uppercase text-5xl">self education resources and infos</h1>
           <p class="text-md">Technology is bringing a massive wave of evolution on learning things on different ways</p>
-          <a href="#" class="bg-none w-60 py-5 px-10 border-2 border-white rounded-full hover:bg-white hover:text-blue-500">Ready to get Started?</a>
+          <a href="#"
+            class="bg-none w-60 py-5 px-10 border-2 border-white rounded-full hover:bg-white hover:text-blue-500">Ready
+            to get Started?</a>
         </div>
       </div>
-      </div>
     </div>
-    <div class="swiper-button-prev">prev</div>
-    <div class="swiper-button-next">next</div>
+  </div>
+  <div class="swiper-button-prev">prev</div>
+  <div class="swiper-button-next">next</div>
   </div>
 
   <div class="courses max-h-max flex flex-col justify-center py-20">
@@ -115,99 +130,741 @@
       <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
     </div>
 
-    <div class="course-card gap-5 p-20 flex">
+    <div class="course-card gap-8 px-18 py-10 flex flex-wrap justify-center items-center">
+      <div class="card1 w-64 bg-none border-2">
+        <a href="">
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
+          </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Introduction Web Design With HTML</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="card2 w-64 bg-none border-2">
+        <a href="">
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
+          </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Designing a Responsive Mobile Website with Muse</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="card3 w-64 bg-none border-2">
+        <a href="">
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
+          </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Introduction Web Design With HTML</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="card4 w-64 bg-none border-2">
+        <a href="">
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
+          </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Introduction Web Design With HTML</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
+      </div>
 
       <div class="card1 w-64 bg-none border-2">
         <a href="">
-        <div class="card-img h-48 w-full" style="background-image: url('./images/course1.jpg'); background-size: contain; background-repeat: no-repeat;">
-          <div class="card-hover p-3 opacity-0 hover:opacity-100">
-            <a href="" class="text-white py-1 px-2 rounded-md ml-4">Best Seller</a>
-            <p class="text-white text-center mt-8">Preview Course</p>
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
           </div>
-          
-          <img class="pl-52 pt-7 h-14 absolute" src="./images/heart.png" alt="">
-        </div>
-        
-        <div class="card-desc pl-5">
-          <p>Ali TUFAN</p>
-          <h1 class="w-34 text-lg font-semibold mb-2">Introduction Web Design With HTML</h1>
-          <div class="star flex items-center mb-5">
-          <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 ms-1 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <p>(6)</p>
-        </div>
-        </div>
-        <hr>
-        <div class="card-bottom flex gap-2 items-center justify-start">
-        <div class="contact-comment flex items-center gap-2 px-4 py-3">
-          <img src="./images/contact.png" alt="" class="w-4 h-4">
-          <p class="mr-2">1548</p>
-          <img src="./images/comment.png" alt="" class="w-4 h-4">
-          <p class="mr-4">25</p>
-        </div>
-          <div class="price">
-            <p class="text-xl text-red-500">$69.94</p>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Introduction Web Design With HTML</h1>
           </div>
-        </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
       </div>
 
-      <div class="card2 w-60 bg-none border-2">
+      <div class="card2 w-64 bg-none border-2">
         <a href="">
-        <div class="card-img">
-          <img src="./images/course1.jpg" alt="">
-        </div>
-        
-        <div class="card-desc">
-          <p>Ali TUFAN</p>
-          <h1>Introduction Web Design With HTML</h1>
-          <div class="star flex items-center mb-5">
-          <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <p>(6)</p>
-        </div>
-        <hr>
-        <div class="card-bottom flex gap-2 items-center justify-start">
-        <div class="contact-comment flex items-center gap-2">
-          <img src="./images/contact.png" alt="" class="w-4 h-4">
-          <p class="">1548</p>
-          <img src="./images/comment.png" alt="" class="w-4 h-4">
-          <p>25</p>
-        </div>
-          <div class="price">
-            <p class="text-xl text-red-500">$69.94</p>
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
           </div>
-        </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Introduction Web Design With HTML</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
       </div>
+
+      <div class="card3 w-64 bg-none border-2">
+        <a href="">
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
+          </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Introduction Web Design With HTML</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="card4 w-64 bg-none border-2">
+        <a href="">
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
+          </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Introduction Web Design With HTML</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
+      </div>
+    </div>
+    <div class="view-all-courses-btn items-center flex justify-center">
+      <a href="" class="bg-none border-2 border-blue-600 px-14 py-3 rounded-full text-blue-500 hover:bg-blue-600 hover:text-white">View all courses</a>
+    </div>
+  </div>
+
+  <div class="achievements gap-14 flex flex-col justify-center items-center h-full text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/swipe1.jpg'); background-size: cover;">
+    <div class="achievements-titles flex flex-col gap-2">
+      <h1 class="text-center text-2xl font-semibold font-sans">School Achievements</h1>
+      <p>Here you can review some statistics about our Education Center</p>
+    </div>
+
+    <div class="statistics flex gap-44">
+      <div class="students w-24 flex flex-col gap-2 items-center justify-center text-center">
+        <img src="/images/student.png" alt="">
+        <h1 class="text-3xl font-semibold">65m+</h1>
+        <p class="w-40 text-lg">Students learning</p>
+      </div>
+
+      <div class="graduates w-24 flex flex-col gap-2 items-center justify-center text-center">
+        <img src="/images/graduate.png" alt="">
+        <h1 class="text-3xl font-semibold">58262</h1>
+        <p class="w-40 text-lg">Graduates</p>
+      </div>
+
+      <div class="free-courses w-24 flex flex-col gap-2 items-center justify-center text-center">
+        <img src="/images/jigsaw.png" alt="">
+        <h1 class="text-3xl font-semibold">896673</h1>
+        <p class="w-40 text-lg">Free courses</p>
+      </div>
+
+      <div class="active-courses w-24 flex flex-col gap-2 items-center justify-center text-center">
+        <img src="/images/online-learning.png" alt="">
+        <h1 class="text-3xl font-semibold">8570</h1>
+        <p class="w-40 text-lg">Active courses</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="events flex flex-col py-14 gap-12">
+    <div class="event-titles flex flex-col items-center gap-3">
+      <h1 class="text-2xl font-semibold">Upcoming Events</h1>
+      <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+    </div>
+
+    <div class="event-cards flex flex-wrap justify-center gap-10">
+      <a href="">
+      <div class="event1 rounded-sm w-80 h-96" style="background-image: url('/images/event1.jpg'); background-size: contain; ">
+        <div class="date text-black py-4 px-56 font-semibold">
+          <button class="bg-white py-3 px-3 text-xl rounded-md">28 March</button>
+        </div>
+
+        <div class="event-details flex flex-col gap-2 text-white py-14 px-6">
+          <div class="flex gap-2"><img src="/images/calendar.png" alt="" class="w-6"><p>Vancouver, Canada</p></div>
+          <div class="flex gap-2"><img src="/images/calendar.png" alt="" class="w-6"><p>8:00 am - 5:00 pm</p></div>
+          <p class="text-lg font-semibold">An Overworked Newspaper Editor</p>
+        </div>
       </div>
       </a>
+
+      <a href="">
+        <div class="event1 w-80 h-96" style="background-image: url('/images/event1.jpg'); background-size: contain; ">
+          <div class="date text-black py-4 px-56 font-semibold">
+            <button class="bg-white py-3 px-3 text-xl rounded-md">28 March</button>
+          </div>
+  
+          <div class="event-details flex flex-col gap-2 text-white py-14 px-6">
+            <div class="flex gap-2"><img src="/images/calendar.png" alt="" class="w-6"><p>Vancouver, Canada</p></div>
+            <div class="flex gap-2"><img src="/images/calendar.png" alt="" class="w-6"><p>8:00 am - 5:00 pm</p></div>
+            <p class="text-lg font-semibold">An Overworked Newspaper Editor</p>
+          </div>
+        </div>
+        </a>
+
+        <a href="">
+          <div class="event1 w-80 h-96" style="background-image: url('/images/event1.jpg'); background-size: contain; ">
+            <div class="date text-black py-4 px-56 font-semibold">
+              <button class="bg-white py-3 px-3 text-xl rounded-md">28 March</button>
+            </div>
+    
+            <div class="event-details flex flex-col gap-2 text-white py-14 px-6">
+              <div class="flex gap-2"><img src="/images/calendar.png" alt="" class="w-6"><p>Vancouver, Canada</p></div>
+              <div class="flex gap-2"><img src="/images/calendar.png" alt="" class="w-6"><p>8:00 am - 5:00 pm</p></div>
+              <p class="text-lg font-semibold">An Overworked Newspaper Editor</p>
+            </div>
+          </div>
+          </a>
     </div>
+  </div>
+
+  <div class="popular-courses bg-blue-800">
+    <div class="popularcourses-titles flex flex-col items-center gap-3 text-white">
+      <h1 class="text-2xl font-semibold">Popular Courses</h1>
+      <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+    </div>
+
+    <div class="course-card gap-8 px-18 py-10 flex flex-wrap justify-center items-center">
+      <div class="card1 w-64 bg-white">
+        <a href="">
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
+          </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Introduction Web Design With HTML</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="card2 w-64 bg-white">
+        <a href="">
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
+          </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Designing a Responsive Mobile Website with Muse</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="card3 w-64 bg-white">
+        <a href="">
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
+          </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Introduction Web Design With HTML</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
+      </div>
+
+      <div class="card4 w-64 bg-white">
+        <a href="">
+          <div class="card-img">
+            <img src="./images/course1.jpg" alt="">
+          </div>
+
+          <div class="card-desc flex flex-col px-5 pt-5">
+            <p class="text-gray-400">Ali TUFAN</p>
+            <h1 class="text-lg font-semibold mb-4">Introduction Web Design With HTML</h1>
+          </div>
+            <div class="star flex items-center mb-5 px-5">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <p class="ml-2">(6)</p>
+            </div>
+            <hr>
+            <div class="card-bottom flex gap-2 items-center justify-start px-5 py-2">
+              <div class="contact-comment flex items-center gap-2 min-w-max">
+                <img src="./images/contact.png" alt="" class="w-4 h-4">
+                <p class="">1548</p>
+                <img src="./images/comment.png" alt="" class="w-4 h-4">
+                <p class="mr-9">25</p>
+              </div>
+              <div class="price">
+                <p class="text-xl text-red-500">$69.94</p>
+              </div>
+            </div>
+        </a>
+      </div>
+      </div>
   </div>
   <script src="js/index.js"></script>
 </body>
+
 </html>
